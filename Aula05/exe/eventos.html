@@ -1,0 +1,46 @@
+<form action="" method="">
+    <fieldset style="background-color: ;">
+        <legend>Dados Pessoais</legend>
+
+        <input type="text" placeholder="Informe seu Nome" required>
+        
+        <input type="email" placeholder="email@email.com" required>
+
+        <input type="password" minlength="6"   placeholder="Senha" required>
+
+        <input type="number"  min="15" max="60" placeholder="Informe sua Idade" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferências</legend>
+
+        <p>Genêro</p>
+        <input type="radio" name="genero" id="" value="M">Masculino
+        <input type="radio" name="genero" id="" value="M">Feminino
+        <hr>
+        <p>Hobbies:</p>
+        <input type="checkbox" name="hobbies" id="" value="musica">Musica
+        <input type="checkbox" name="hobbies" id="" value="esporte">Esporte
+        <input type="checkbox" name="hobbies" id="" value="leitura">Leitura
+        <hr>
+
+        <label for="ciadade">Cidade</label>
+        <select name="cidadae" id="cidade">
+            <option value="" selected hidden>Selecione</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="NT">Niterói</option>
+            <option value="SP">São Paulo</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mensagem</legend>
+        <textarea name="" id="" cols="80" rows="10"></textarea>
+    </fieldset>
+
+    <br>
+    <input type="file" name="arquivo">
+    <p><button style="background-color: rgb(11, 11, 85); color: aliceblue;" type="submit">Enviar</button> <button type="reset" style="background-color: rgb(69, 16, 16); color: aliceblue;">Limpar</button></p>
+    <p></p>
+    
+</form>
