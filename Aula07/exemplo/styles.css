@@ -1,0 +1,65 @@
+/* Reset de todos os elementos */
+
+*{
+    margin: 0; /* Reseta a margem */
+    border: 0; /* Reseta a borda */
+    padding: 0; /* Reseta o padding (Espaço interno) */
+}
+
+header{
+    background-color: #34495e;
+    /* width: 100vw;
+    height: 10vh; */
+    text-align: end; /* Alinha o texto */
+    padding: 2vh; /* Espaço interno */
+}
+
+ul li{
+   display: inline;
+   margin: 5px; /* Margem do links  */
+}
+
+ul li a{
+    text-decoration: none; /* Remove os traços */
+    color: #95a5a6;
+}
+
+ul li a:hover{ /* Altera ao passar o mouse */
+    color: #bdc3c7;
+}
+
+/* Corpo da nossa pagina */
+
+main{
+    width: 100vw;
+    height: 90vh;
+}
+
+#principal{
+    display: flex;    
+}
+
+article{
+    flex: 3;
+    font-size: 1.3em;
+}
+
+aside{
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 1em;
+}
+
+.destaque{
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Rodape */
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
