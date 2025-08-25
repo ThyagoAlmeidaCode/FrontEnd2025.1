@@ -36,7 +36,8 @@ main{
 }
 
 #principal{
-    display: flex;    
+    display: flex;
+    gap: 3;
 }
 
 article{
