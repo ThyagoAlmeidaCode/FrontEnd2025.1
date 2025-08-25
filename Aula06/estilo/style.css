@@ -1,0 +1,20 @@
+body{
+    background-color: #989898;
+}
+
+h1{
+    color:blue;
+    text-align: center;
+}
+
+/* Cria um id*/
+#titulo_dois{
+    color: green;
+    text-align: left;
+}
+
+/* Criand0 uma classe */
+.titulo_tres{
+    color: rgb(71, 6, 71);
+    text-align: right;
+}

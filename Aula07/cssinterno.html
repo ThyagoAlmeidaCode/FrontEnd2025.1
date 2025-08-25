@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exemplo de CSS Interno</title>
+
+  <!-- CSS interno: vai dentro de <style> no <head> -->
+  <style>
+    /* Seletor por elemento (aplica a toda a página) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;                   /* remove margens padrão do navegador */
+      background: #f5f5f5;         /* cor de fundo da página */
+      color: #222;                 /* cor do texto */
+      line-height: 1.5;
+    }
+
+    /* Seletor por elemento */
+    header {
+      background: #4f46e5;         /* roxo */
+      color: white;
+      padding: 24px 16px;          /* espaçamento interno (top/bottom, left/right) */
+      text-align: center;
+    }
+
+    /* Seletor por classe (pode ser reutilizada em vários elementos) */
+    .container {
+      max-width: 900px;            /* largura máxima do conteúdo */
+      margin: 24px auto;           /* centraliza horizontalmente */
+      padding: 0 16px;             /* respiro lateral */
+    }
+
+    /* Exemplo de “card” simples usando classe */
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;   /* borda cinza clara */
+      border-radius: 12px;         /* cantos arredondados */
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06); /* sombra suave */
+      transition: transform 0.15s ease, box-shadow 0.15s ease; /* animação no hover */
+    }
+
+    /* Pseudo-classe :hover (efeito ao passar o mouse) */
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    }
+
+    /* Seletor por ID (único na página) */
+    #destaque {
+      border-left: 6px solid #4f46e5; /* barra colorida à esquerda */
+      padding-left: 12px;
+      background: #eef2ff;            /* roxo bem claro */
+    }
+
+    /* Estilização de links e navegação simples */
+    nav {
+      display: flex;
+      gap: 12px;                /* espaço entre itens */
+      justify-content: center;
+      margin-top: 12px;
+    }
+    nav a {
+      text-decoration: none;    /* remove sublinhado */
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      background: white;
+      color: #111827;
+    }
+    nav a:hover {
+      background: #f3f4f6;
+    }
+
+    /* Pequena responsividade sem complicar (opcional) */
+    @media (max-width: 480px) {
+      header { padding: 16px 12px; }
+      .container { margin: 16px auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Página com CSS Interno</h1>
+    <p>Um exemplo simples para estudos</p>
+
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="sobre" class="card" style="margin-bottom: 16px;">
+      <!-- style inline acima só para mostrar que também existe; mas o ideal é centralizar no CSS interno -->
+      <h2>Sobre</h2>
+      <p>
+        Esta página usa <strong>CSS interno</strong>, ou seja,
+        as regras de estilo estão dentro do elemento <code>&lt;style&gt;</code> no
+        <code>&lt;head&gt;</code> do documento.
+      </p>
+    </section>
+
+    <section id="servicos" class="card" style="margin-bottom: 16px;">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Criação de sites</li>
+        <li>Consultoria</li>
+        <li>Treinamentos</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="card" >
+      <h2>Contato</h2>
+      <p id="destaque">
+        Fale com a gente pelo e-mail <em>contato@exemplo.com</em>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container" style="text-align:center; padding-bottom: 32px;">
+    <small>&copy; 2025 — Exemplo de CSS Interno</small>
+  </footer>
+</body>
+</html>
