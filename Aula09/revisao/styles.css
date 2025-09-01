@@ -1,0 +1,49 @@
+header{
+
+    /* Trabalhar com medidas relativas(vw, vh, %, em, rem) */
+    width:100vw ;
+    height: 10vh;
+    background-color: #41576d;
+    
+}
+
+h1{
+    color: blue;
+}
+
+p{
+    color: blue;
+}
+
+
+
+/* 3 passo para trabalhar com responsividade */
+
+@media screen and (max-width: 600px) {
+
+    header{
+        background-color: red;
+    }
+    h1{
+        color: green;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+    header{
+        background-color: yellow;
+    }
+    h1{
+        color: red;
+    }
+    
+}
+
+@media(orientation: landscape){
+    header{
+        background-color: green;
+    }
+    h1{
+        color: rgb(56, 16, 56);
+    }
+}
