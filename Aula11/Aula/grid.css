@@ -14,11 +14,85 @@
 }
 
 .item{
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     background-color: darkcyan;
     color: white;
     text-align: center;
     line-height: 200px;
  
+}
+
+.item:nth-child(1){
+    background-color: saddlebrown;
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.item:nth-child(2){
+    background-color: slateblue;
+    grid-row: 2/5;
+    
+}
+
+.item:nth-child(10){
+    background-color: slateblue;
+    grid-column: 1/4;
+}
+
+
+.containerarea{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "asside article"
+    "section section"
+    "footer footer"
+    ;
+    gap: 30px;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    width: auto;
+    height: 5vh;
+    text-align: center;
+    grid-area: header;
+}
+
+aside{
+    background-color: brown;
+    color: aliceblue;
+    width: auto;
+    height: 5vh;
+    text-align: center;
+    grid-area: asside;
+}
+
+article{
+    background-color: darkgreen;
+    color: aliceblue;
+    width: auto;
+    height: 5vh;
+    text-align: center;
+    grid-area: article;
+}
+
+section{
+    background-color: darkblue;
+    color: aliceblue;
+    width: auto;
+    height: 5vh;
+    text-align: center;
+    grid-area: section;
+}
+
+footer{
+    background-color: darkred;
+    color: aliceblue;
+    width: auto;
+    height: 5vh;
+    text-align: center;
+    grid-area: footer ;
 }
