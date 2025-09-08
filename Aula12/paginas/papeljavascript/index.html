@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JavaScript no Desenvolvimento Web</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript no Desenvolvimento Web</h1>
+            <p class="subtitle">O JavaScript é uma linguagem de programação essencial para criar experiências interativas e dinâmicas na web. Abaixo estão exemplos reais de sua aplicação.</p>
+        </header>
+        
+        <div class="applications">
+            <!-- Menu Dropdown -->
+            <div class="application-card">
+                <div class="card-header">
+                    Menus Dropdown
+                </div>
+                <div class="card-content">
+                    <p>Menus dropdown são componentes de interface comuns que mostram uma lista de opções quando ativados.</p>
+                    <div class="demo-area">
+                        <div class="dropdown">
+                            <button class="dropdown-btn" onclick="toggleDropdown()">
+                                Selecione uma opção
+                                <span>▼</span>
+                            </button>
+                            <div id="dropdownMenu" class="dropdown-content">
+                                <a href="#">Opção 1</a>
+                                <a href="#">Opção 2</a>
+                                <a href="#">Opção 3</a>
+                                <a href="#">Opção 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Validação de Formulários -->
+            <div class="application-card">
+                <div class="card-header">
+                    Validação de Formulários
+                </div>
+                <div class="card-content">
+                    <p>JavaScript permite validar dados do formulário antes do envio, melhorando a experiência do usuário.</p>
+                    <div class="demo-area">
+                        <form onsubmit="return validateForm()">
+                            <input type="text" id="name" placeholder="Seu nome">
+                            <div id="nameError" class="error">Por favor, insira seu nome</div>
+                            
+                            <input type="email" id="email" placeholder="Seu e-mail">
+                            <div id="emailError" class="error">Por favor, insira um e-mail válido</div>
+                            
+                            <textarea id="message" placeholder="Sua mensagem" rows="3"></textarea>
+                            <div id="messageError" class="error">Por favor, insira uma mensagem</div>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carrossel de Imagens -->
+            <div class="application-card">
+                <div class="card-header">
+                    Carrosséis de Imagens
+                </div>
+                <div class="card-content">
+                    <p>Carrosséis permitem exibir múltiplas imagens ou conteúdos em um espaço limitado, com transições suaves.</p>
+                    <div class="demo-area">
+                        <div class="carousel">
+                            <div class="carousel-inner" id="carouselInner">
+                                <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/id/10/800/400');">
+                                    <div>Imagem 1 - Paisagem Natural</div>
+                                </div>
+                                <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/id/11/800/400');">
+                                    <div>Imagem 2 - Arquitetura Urbana</div>
+                                </div>
+                                <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://picsum.photos/id/12/800/400');">
+                                    <div>Imagem 3 - Detalhes de Natureza</div>
+                                </div>
+                            </div>
+                            <div class="carousel-controls" id="carouselControls"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Atualizações com AJAX -->
+            <div class="application-card">
+                <div class="card-header">
+                    Atualizações com AJAX
+                </div>
+                <div class="card-content">
+                    <p>AJAX permite atualizar conteúdo dinamicamente sem recarregar a página toda, criando experiências mais fluidas.</p>
+                    <div class="demo-area">
+                        <div class="news-container" id="newsContainer">
+                            <div class="news-item">
+                                <h4>JavaScript é a linguagem mais popular</h4>
+                                <p>Há 9 anos consecutivos, JS lidera o ranking das linguagens mais utilizadas.</p>
+                            </div>
+                            <div class="news-item">
+                                <h4>Novidades no ECMAScript 2023</h4>
+                                <p>Confira as novas funcionalidades da especificação deste ano.</p>
+                            </div>
+                        </div>
+                        <button class="refresh-btn" onclick="loadNewContent()">
+                            <span>↻</span> Carregar Novas Notícias
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>JavaScript é essencial para criar experiências web modernas, interativas e responsivas.</p>
+            <p>Estes exemplos demonstram apenas uma parte do seu potencial no desenvolvimento front-end.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

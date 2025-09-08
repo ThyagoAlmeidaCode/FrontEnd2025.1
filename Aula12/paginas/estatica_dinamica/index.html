@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Estática vs Interativa</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Estática vs Interativa</h1>
+            <p class="subtitle">Compare duas versões visualmente idênticas: uma apenas com HTML/CSS e outra com JavaScript</p>
+        </header>
+        
+        <div class="comparison">
+            <!-- Versão Estática -->
+            <div class="box">
+                <div class="box-header">
+                    Versão Estática (HTML/CSS)
+                </div>
+                <div class="box-content">
+                    <div class="component">
+                        <h3>Botão de Alert</h3>
+                        <p>Este botão não faz nada. Em uma versão com JavaScript, mostraria um alerta.</p>
+                        <button>Clique para ver um alerta</button>
+                    </div>
+                    
+                    <div class="component">
+                        <h3>Mostrar/Esconder Texto</h3>
+                        <p>Este texto está sempre visível. Com JavaScript, poderíamos escondê-lo e mostrá-lo.</p>
+                        <p>Texto que poderia ser escondido com JavaScript.</p>
+                        <button>Esconder Texto</button>
+                    </div>
+                    
+                    <div class="component">
+                        <h3>Contador de Cliques</h3>
+                        <p>Este contador não funciona. Com JavaScript, poderíamos contar os cliques.</p>
+                        <div class="counter">0 cliques</div>
+                        <button>Clique para contar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Versão Interativa -->
+            <div class="box">
+                <div class="box-header">
+                    Versão Interativa (HTML/CSS + JavaScript)
+                </div>
+                <div class="box-content">
+                    <div class="component">
+                        <h3>Botão de Alert</h3>
+                        <p>Este botão está funcionando com JavaScript e mostrará um alerta quando clicado.</p>
+                        <button onclick="showAlert()">Clique para ver um alerta</button>
+                    </div>
+                    
+                    <div class="component">
+                        <h3>Mostrar/Esconder Texto</h3>
+                        <p>Este texto pode ser escondido e mostrado com JavaScript.</p>
+                        <p id="toggleText">Texto que pode ser escondido com JavaScript.</p>
+                        <button onclick="toggleText()">Esconder Texto</button>
+                    </div>
+                    
+                    <div class="component">
+                        <h3>Contador de Cliques</h3>
+                        <p>Este contador funciona com JavaScript e conta cada clique.</p>
+                        <div class="counter" id="clickCounter">0 cliques</div>
+                        <button onclick="incrementCounter()">Clique para contar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Atividade para demonstrar a diferença entre páginas estáticas e interativas</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
