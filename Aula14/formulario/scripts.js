@@ -1,5 +1,6 @@
 /* Conectar ao Formulario */
 document.getElementById('meuFormulario').addEventListener('submit', (event) => {
+    /* Evita q o formulario atualize */
     event.preventDefault();
     /* Chama a função */
     validaForm();
