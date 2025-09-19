@@ -1,0 +1,22 @@
+<app-header></app-header>
+
+
+<h1>Databindig</h1>
+<P>{{ titulo }}</P>
+
+<h2>Imagem de lagarto</h2>
+<img [src]="imagem"  alt="">
+<button (click)="clicou()" >Clique aqui</button>
+
+<h2>Objeto</h2>
+
+@if ( pessoa.idade >= 18 ){
+  <p>Nome: {{ pessoa.nome }} - Idade: {{ pessoa.idade }}</p>
+} @else{
+  <p>Menor de idade</p>
+}
+
+<h2>Exibir caixa de frutas</h2>
+@for ( ze of caixaDefrutas; track ze.nome ){
+  <p>Fruta: {{ ze.nome }}, Quantidade: {{ ze.quantidade }} </p>
+}
